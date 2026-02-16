@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./style/bootstrap.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Custom Theme CSS -->
+    <link rel="stylesheet" href="./style/theme.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.svg">
+
+    <title>KARA Technologies | Enterprise Software, AI & Digital Solutions - Portfolio</title>
+  </head>
+  <body>
+    <canvas id="dustCanvas" class="w-100"></canvas>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blur sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-white fs-4" href="index.html">
+          KARA Technologies
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-light d-none d-sm-block theme-cta">
+          Get a Free Quote
+          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+            height="16" fill="#ffffff" viewBox="0 0 256 256">
+            <path
+              d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section - Portfolio -->
+    <div id="hero-section">
+      <div class="hero-title mx-auto text-center px-5 pt-5">
+        <h1 class="hero-heading px-5">
+          Transforming Ideas into Intelligent Digital Solutions
+        </h1>
+        <div class="hero-subtitle mt-3">
+          <p class="mb-0 hero-subheading">
+            Explore a selection of our work — from enterprise platforms to AI-driven tools,
+          </p>
+          <p class="mb-0 hero-subheading">
+            built for performance, scalability, and real business impact.
+          </p>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text">View Our Work</span>
+      </div>
+    </div>
+
+    <!-- Portfolio Showcase (Swiper Slider) -->
+    <section id="portfolio" class="py-5">
+      <div class="our-services-content container py-5">
+        <div class="section-heading text-center">
+          <p class="mb-3">Featured Projects</p>
+          <h3>Real Solutions, Real Results</h3>
+        </div>
+        <div class="row w-100 py-4 my-5">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- PROJECT 1 -->
+              <div class="slider-item swiper-slide d-flex row w-100">
+                <div class="slider-image-wrapper col-xl-6">
+                  <img class="slider-image" src="./assets/imgs/portfolio-1.png" alt="Financial CRM Platform">
+                </div>
+                <div class="slider-item-content col-xl-6 d-flex flex-column justify-content-between">
+                  <div class="portfolio-section-top">
+                    <p class="portfolio-category">Enterprise Software</p>
+                    <h4 class="swiper-heading portfolio-title">Financial CRM Management System</h4>
+                    <p class="swiper-desc mt-3">
+                      A centralized CRM platform designed to help financial teams manage client data, automate reporting, and improve operational transparency. Built to replace manual tracking systems and improve decision-making accuracy.
+                    </p>
+                  </div>
+                  <div class="portfolio-section-bottom">
+                    <p class="portfolio-category">Technology Stack</p>
+                    <div class="tech-logos d-flex gap-4 mt-3">
+                      <img class="img-fluid" src="./assets/imgs/Technology.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-1.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-2.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-3.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-4.png" alt>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- PROJECT 2 -->
+              <div class="slider-item swiper-slide d-flex row w-100">
+                <div class="slider-image-wrapper col-xl-6">
+                  <img class="slider-image" src="./assets/imgs/portfolio-1.png" alt="AI Chatbot Platform">
+                </div>
+                <div class="slider-item-content col-xl-6 d-flex flex-column justify-content-between">
+                  <div class="portfolio-section-top">
+                    <p class="portfolio-category">AI & Automation</p>
+                    <h4 class="swiper-heading portfolio-title">AI-Powered Customer Support Chatbot</h4>
+                    <p class="swiper-desc mt-3">
+                      An intelligent chatbot platform built to automate customer interactions, reduce support workload, and provide instant responses using natural language processing and backend integrations.
+                    </p>
+                  </div>
+                  <div class="portfolio-section-bottom">
+                    <p class="portfolio-category">Technology Stack</p>
+                    <div class="tech-logos d-flex gap-4 mt-3">
+                      <img class="img-fluid" src="./assets/imgs/Technology.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-1.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-2.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-3.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-4.png" alt>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- PROJECT 3 -->
+              <div class="slider-item swiper-slide d-flex row w-100">
+                <div class="slider-image-wrapper col-xl-6">
+                  <img class="slider-image" src="./assets/imgs/portfolio-1.png" alt="Business Automation Software">
+                </div>
+                <div class="slider-item-content col-xl-6 d-flex flex-column justify-content-between">
+                  <div class="portfolio-section-top">
+                    <p class="portfolio-category">Business Automation</p>
+                    <h4 class="swiper-heading portfolio-title">Custom Business Process Automation System</h4>
+                    <p class="swiper-desc mt-3">
+                      A workflow automation platform designed to eliminate manual processes, connect internal systems, and improve operational speed and accuracy across departments.
+                    </p>
+                  </div>
+                  <div class="portfolio-section-bottom">
+                    <p class="portfolio-category">Technology Stack</p>
+                    <div class="tech-logos d-flex gap-4 mt-3">
+                      <img class="img-fluid" src="./assets/imgs/Technology.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-1.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-2.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-3.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-4.png" alt>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- PROJECT 4 -->
+              <div class="slider-item swiper-slide d-flex row w-100">
+                <div class="slider-image-wrapper col-xl-6">
+                  <img class="slider-image" src="./assets/imgs/portfolio-1.png" alt="Enterprise Mobile App">
+                </div>
+                <div class="slider-item-content col-xl-6 d-flex flex-column justify-content-between">
+                  <div class="portfolio-section-top">
+                    <p class="portfolio-category">Mobile Application</p>
+                    <h4 class="swiper-heading portfolio-title">Enterprise Operations Mobile App</h4>
+                    <p class="swiper-desc mt-3">
+                      A mobile platform enabling teams to access real-time data, track operations, and collaborate remotely. Designed for performance, security, and seamless backend integration.
+                    </p>
+                  </div>
+                  <div class="portfolio-section-bottom">
+                    <p class="portfolio-category">Technology Stack</p>
+                    <div class="tech-logos d-flex gap-4 mt-3">
+                      <img class="img-fluid" src="./assets/imgs/Technology.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-1.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-2.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-3.png" alt>
+                      <img class="img-fluid" src="./assets/imgs/Technology-4.png" alt>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-buttons">
+              <button class="swiper-button-prev"></button>
+              <button class="swiper-button-next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Carousel (Owl Carousel) -->
+    <section id="testimonial" class="py-5">
+      <div class="testimonial-container container py-5">
+        <div class="section-heading text-center">
+          <p class="mb-3">Client Success</p>
+          <h3>What Our Partners Say About Us</h3>
+        </div>
+        <section class="testimonials mt-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div id="customers-testimonials" class="owl-carousel">
+                  <div class="item">
+                    <div class="shadow-effect d-flex gap-4">
+                      <img class="img-circle img-fluid"
+                        src="https://randomuser.me/api/portraits/men/32.jpg" alt>
+                      <div class="testimonial-content d-flex flex-column gap-1">
+                        <p class="testimonial-person-name">Jacob</p>
+                        <p class="testimonial-company-name">CEO - IT Solution Company</p>
+                        <p class="testimonial-message">
+                          KARA Technologies delivered a robust CRM platform that streamlined our operations. Their technical expertise and commitment to timelines were exceptional.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="shadow-effect d-flex gap-4">
+                      <img class="img-circle img-fluid"
+                        src="https://randomuser.me/api/portraits/women/44.jpg" alt>
+                      <div class="testimonial-content d-flex flex-column gap-1">
+                        <p class="testimonial-person-name">Priya</p>
+                        <p class="testimonial-company-name">CTO - FinTech Startup</p>
+                        <p class="testimonial-message">
+                          The AI chatbot they built for us reduced support tickets by 40%. Highly recommend their team for complex, high‑quality development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="shadow-effect d-flex gap-4">
+                      <img class="img-circle img-fluid"
+                        src="https://randomuser.me/api/portraits/men/86.jpg" alt>
+                      <div class="testimonial-content d-flex flex-column gap-1">
+                        <p class="testimonial-person-name">Michael</p>
+                        <p class="testimonial-company-name">VP of Engineering</p>
+                        <p class="testimonial-message">
+                          Scalable, secure, and well‑documented. KARA’s team integrated seamlessly with ours and delivered ahead of schedule.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <p class="text-muted">© 2026 KARA Technologies</p>
+        </div>
+        <div class="col mb-3"></div>
+        <div class="col mb-3">
+          <h5>Company</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="services.html" class="nav-link p-0 text-muted">Services</a></li>
+            <li class="nav-item mb-2"><a href="portfolio.html" class="nav-link p-0 text-muted">Portfolio</a></li>
+            <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5>Solutions</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Enterprise Software</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">AI & Automation</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mobile Apps</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cloud Security</a></li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5>Connect</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LinkedIn</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">GitHub</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Email</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"></script>
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="./script/owl.carousel.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/owlcarousel.js"></script>
+    <script src="./script/swiper.js"></script>
+    <script src="./script/main.js"></script>
+    <script src="./script/dustAnimation.js"></script>
+  </body>
+</html>
