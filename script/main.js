@@ -90,4 +90,13 @@ function animateCounter(element, target, duration, label) {
       sectionObserver.observe(section);
     });
   });
-  
+
+  window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        // If scrolled down more than 50px from absolute top, hide it. Otherwise show it.
+        if (window.scrollY > 50) {
+          navbar.classList.add('navbar-hidden');
+        } else {
+          navbar.classList.remove('navbar-hidden');
+        }
+      });

@@ -807,3 +807,267 @@ section.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* --- SERVICE PAGE EXTENDED STYLES (UPDATED) --- */
+
+:root {
+  --kara-orange: #ff7a3d;
+  --kara-orange-light: #fff0ea;
+  --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 15px 40px rgba(255, 122, 61, 0.15);
+  --border-rad: 24px;
+}
+
+.text-orange {
+  color: var(--kara-orange) !important;
+}
+
+/* --- SERVICE PAGE EXTENDED STYLES --- */
+
+:root {
+  --kara-orange: #ff7a3d;
+  --kara-orange-light: #fff0ea;
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.08); /* Darkened slightly so it pops */
+  --shadow-hover: 0 15px 40px rgba(255, 122, 61, 0.15);
+  --border-rad: 24px;
+}
+
+.text-orange {
+  color: var(--kara-orange) !important;
+}
+
+/* =========================================
+   THEME PROTECTION FOR WHITE SECTIONS
+========================================= */
+/* This forces the text to be dark inside the light sections, ignoring the global dark theme */
+.light-section h1, .light-section h2, .light-section h3, .light-section h4, .light-section h5, .light-section h6 {
+  color: #1a1a1a !important; /* Dark Charcoal */
+  font-family: 'Manrope', sans-serif !important; 
+}
+
+.light-section p, .light-section li, .light-section div {
+  color: #555555 !important; /* Medium Gray for readable body text */
+}
+
+.light-section .fw-bold, .light-section .text-dark {
+  color: #1a1a1a !important; /* Force bold text to be completely dark */
+}
+
+/* =========================================
+   INDIVIDUAL COMPONENT STYLES
+========================================= */
+
+/* Section 1: Service Cards */
+.service-card {
+  background: #ffffff;
+  border-radius: var(--border-rad);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(0, 0, 0, 0.06); /* Gives structure to the white card */
+  transition: all 0.3s ease-in-out;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+}
+
+.service-card .icon-circle {
+  width: 70px;
+  height: 70px;
+  background-color: var(--kara-orange-light);
+  color: var(--kara-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-bottom-color: var(--kara-orange);
+  box-shadow: var(--shadow-hover);
+}
+
+.service-card:hover .icon-circle {
+  background-color: var(--kara-orange);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 122, 61, 0.4);
+}
+
+/* Section 2: About Image & Utilities */
+.rounded-custom {
+  border-radius: var(--border-rad) !important;
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow-soft) !important;
+}
+
+.theme-btn-orange {
+  background-color: var(--kara-orange);
+  color: white;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.theme-btn-orange:hover {
+  background-color: #e6662e;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Section 3: Why Choose Us */
+.bg-orange-light {
+  background-color: var(--kara-orange-light);
+  position: relative;
+}
+
+.shape-bg {
+  position: absolute;
+  background: rgba(255, 122, 61, 0.05);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.shape-1 { width: 300px; height: 300px; top: -100px; left: -100px; }
+.shape-2 { width: 400px; height: 400px; bottom: -150px; right: -150px; }
+
+.feature-item { transition: transform 0.3s ease; }
+.feature-item:hover { transform: translateX(5px); }
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: var(--shadow-soft);
+  color: var(--kara-orange);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+  transform: scale(1.15);
+  background: var(--kara-orange);
+  color: white;
+  box-shadow: var(--shadow-hover);
+}
+
+/* =========================================
+   Section 4: Service Process Timeline
+========================================= */
+
+/* The White Wrapping Card */
+.process-card {
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* The connecting solid orange line */
+.process-line {
+  position: absolute;
+  top: 30px; /* Precisely half of the 60px circle to run straight through the middle */
+  left: 8%; /* Extends just slightly past the first circle */
+  right: 8%; /* Extends just slightly past the last circle */
+  height: 2px;
+  background-color: var(--kara-orange);
+  z-index: 1; /* Puts line above card background, but below the circles */
+}
+
+/* The solid orange circles */
+.light-section .step-circle {
+  width: 60px;
+  height: 60px;
+  background-color: var(--kara-orange) !important;
+  color: #ffffff !important; /* FORCES NUMBERS TO BE WHITE */
+  border-radius: 50%;
+  position: relative;
+  z-index: 2; /* Keeps circles visibly on top of the line */
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.process-step:hover .step-circle {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(255, 122, 61, 0.4) !important;
+}
+
+/* Text balance under circles */
+.process-step h5 {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-top: 1.2rem !important;
+}
+
+/* Section 5: Video Player */
+.video-wrapper { cursor: pointer; }
+.video-overlay { background-color: rgba(0, 0, 0, 0.1); transition: all 0.4s ease; }
+.video-wrapper:hover .video-overlay { background-color: rgba(255, 122, 61, 0.3); }
+
+.play-btn {
+  width: 80px;
+  height: 80px;
+  background-color: var(--kara-orange);
+  color: white;
+  transition: all 0.3s ease;
+}
+.video-wrapper:hover .play-btn {
+  transform: scale(1.15);
+  background-color: #ffffff;
+  color: var(--kara-orange);
+}
+
+/* Section 6: More Services List */
+.more-service-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.more-service-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--kara-orange) !important;
+  box-shadow: var(--shadow-hover) !important;
+}
+
+.ms-icon-box {
+  width: 48px;
+  height: 48px;
+  background: var(--kara-orange-light);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.more-service-item:hover .ms-icon-box {
+  background: var(--kara-orange);
+  color: white !important;
+}
+
+/* Section 7: Testimonials */
+.testimonial-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover) !important;
+}
+
+.client-img {
+  border: 3px solid var(--kara-orange-light);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover .client-img { border-color: var(--kara-orange); }
+
+/* General Spacing */
+section { padding: 80px 0; }
+.display-6 { font-size: 2.5rem; font-weight: 700; }
+@media (max-width: 768px) { .display-6 { font-size: 2rem; } }
+
+/* NAVBAR FIX */
+.navbar { transition: transform 0.3s ease-in-out !important; }
+.navbar.navbar-hidden { transform: translateY(-100%) !important; }
