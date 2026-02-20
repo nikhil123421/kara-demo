@@ -813,20 +813,6 @@ section.visible {
 :root {
   --kara-orange: #ff7a3d;
   --kara-orange-light: #fff0ea;
-  --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.04);
-  --shadow-hover: 0 15px 40px rgba(255, 122, 61, 0.15);
-  --border-rad: 24px;
-}
-
-.text-orange {
-  color: var(--kara-orange) !important;
-}
-
-/* --- SERVICE PAGE EXTENDED STYLES --- */
-
-:root {
-  --kara-orange: #ff7a3d;
-  --kara-orange-light: #fff0ea;
   --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.08); /* Darkened slightly so it pops */
   --shadow-hover: 0 15px 40px rgba(255, 122, 61, 0.15);
   --border-rad: 24px;
@@ -1071,3 +1057,47 @@ section { padding: 80px 0; }
 /* NAVBAR FIX */
 .navbar { transition: transform 0.3s ease-in-out !important; }
 .navbar.navbar-hidden { transform: translateY(-100%) !important; }
+
+
+/* =========================================
+   NEW LIGHT THEME GLOBAL FIXES
+========================================= */
+
+/* Navbar Adjustments */
+.navbar .nav-link {
+  color: #555555 !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: var(--kara-orange) !important;
+}
+
+/* Footer Link Hovers */
+.footer-links a {
+  transition: all 0.3s ease;
+}
+.footer-links a:hover {
+  color: var(--kara-orange) !important;
+  padding-left: 6px; /* Creates a slick sliding effect on hover */
+}
+
+/* Footer Social Icon Hovers */
+.social-icons a {
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  background-color: var(--kara-orange) !important;
+  color: white !important;
+  transform: translateY(-4px); /* Lifts the icon up slightly */
+  box-shadow: var(--shadow-hover) !important;
+}
+
+/* =========================================
+   HERO WATERMARK FIX
+========================================= */
+.light-section .logo-watermark {
+  color: #e2e8f0 !important; /* Forces it to be a very subtle, light silver/gray */
+  opacity: 0.4 !important;    /* Pushes it safely into the background */
+  z-index: 0 !important;
+}

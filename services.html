@@ -12,39 +12,59 @@
     <title>KARA Technologies | Services</title>
   </head>
   <body>
-    <canvas id="dustCanvas" class="w-100"></canvas>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-blur sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-white fs-4" href="index.html">KARA Technologies</a>
+        <a class="navbar-brand fw-bold text-dark fs-4" href="index.html">KARA <span class="text-orange">Technologies</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="services.html">Service</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase " href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase active" href="services.html">Service</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase " href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase " href="contact.html">Contact Us</a></li>
           </ul>
         </div>
-        <button class="btn btn-outline-light d-none d-sm-block theme-cta">
+        <button class="btn theme-btn-orange rounded-pill d-none d-sm-block px-4">
           Get a Free Quote
         </button>
       </div>
     </nav>
 
-    <div id="hero-section">
-      <div class="hero-title mx-auto text-center px-5 pt-5">
-        <h1 class="hero-heading px-5">Scalable, Secure & Intelligent IT Services</h1>
-        <div class="hero-subtitle mt-3">
-          <p class="mb-0 hero-subheading">From AI-powered automation to enterprise software development,</p>
-          <p class="mb-0 hero-subheading">we deliver tailored technology solutions that drive efficiency and growth.</p>
+    <section id="hero-section" class="position-relative overflow-hidden light-section d-flex align-items-center" style="min-height: 90vh; background: linear-gradient(135deg, #fdfdfd 0%, #f4f5f8 100%);">
+      
+      <div class="position-absolute top-50 start-50 translate-middle" style="width: 100%; z-index: 0; pointer-events: none; overflow: hidden;">
+        <div style="font-size: 22vw; font-weight: 900; color: #e2e8f0 !important; text-align: center; margin: 0; letter-spacing: -10px; opacity: 0.5 !important; line-height: 1;">KARA</div>
+      </div>
+
+      <div class="container position-relative z-1 text-center mt-5 pt-5">
+        <h1 class="display-3 fw-bold mb-4" style="color: #1a1a1a;">Scalable, Secure & <br><span class="text-orange">Intelligent IT Services</span></h1>
+        <p class="fs-5 text-muted mb-5 mx-auto" style="max-width: 700px;">
+          From AI-powered automation to enterprise software development, we deliver tailored technology solutions that drive efficiency and growth.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <button class="btn theme-btn-orange rounded-pill px-5 py-3 fw-bold shadow-lg">Explore Our Services</button>
+          
+          <button class="btn btn-outline-dark rounded-pill px-5 py-3 fw-bold d-flex align-items-center bg-white" data-bs-toggle="modal" data-bs-target="#videoModal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="me-2 text-orange" viewBox="0 0 256 256"><path d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-24.2-13.64V39.92a16,16,0,0,1,24.08-13.73l144,88.1A15.74,15.74,0,0,1,240,128Z"></path></svg>
+            Watch Intro
+          </button>
         </div>
       </div>
-      <div class="scroll-down">
-        <div class="chevron"></div><div class="chevron"></div><div class="chevron"></div>
-        <span class="text">Explore Our Services</span>
+    </section>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0 position-relative">
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 start-100 translate-middle" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
+            <div class="ratio ratio-16x9 rounded-custom overflow-hidden shadow-lg bg-dark">
+              <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=0" title="KARA Video" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -144,7 +164,6 @@
       </div>
     </section>
     
-
     <section id="service-process" class="py-5 light-section" style="background-color: #f9f9fb;">
       <div class="container py-5">
         <div class="section-heading text-center mb-5 pb-2">
@@ -152,9 +171,7 @@
         </div>
         
         <div class="process-card bg-white shadow-soft rounded-custom px-2 py-5 position-relative">
-          
           <div class="position-relative w-100">
-            
             <div class="process-line d-none d-lg-block"></div>
             
             <div class="row row-cols-1 row-cols-lg-5 text-center m-0 position-relative">
@@ -307,42 +324,60 @@
       </div>
     </section>
 
-    <div class="container">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div class="col mb-3">
-          <a href="index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            <h4 class="fw-bold">KARA</h4>
-          </a>
-          <p class="text-muted">© 2026 KARA Technologies</p>
+    <footer class="py-5" style="background-color: #f9f9fb; border-top: 1px solid rgba(0,0,0,0.05);">
+      <div class="container py-4">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6 mb-3 pe-lg-5">
+            <a href="index.html" class="d-flex align-items-center mb-4 text-decoration-none">
+              <h3 class="fw-bold mb-0" style="color: #1a1a1a;">KARA <span class="text-orange">Tech</span></h3>
+            </a>
+            <p class="text-muted small mb-4 line-height-lg">Empowering startups and enterprises with scalable, secure, and intelligent IT solutions to drive real business growth.</p>
+            <div class="d-flex flex-column gap-3 text-muted small">
+              <div class="d-flex align-items-center"><span class="fs-5 me-3">📍</span> Delhi, India</div>
+              <div class="d-flex align-items-center"><span class="fs-5 me-3">✉️</span> contact@kara.tech</div>
+              <div class="d-flex align-items-center"><span class="fs-5 me-3">📞</span> +91 98765 43210</div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-3 offset-lg-1">
+            <h6 class="fw-bold mb-4 text-dark text-uppercase letter-spacing-1">Quick Links</h6>
+            <ul class="list-unstyled d-flex flex-column gap-3 footer-links">
+              <li><a href="index.html" class="text-muted text-decoration-none fw-semibold">Home</a></li>
+              <li><a href="services.html" class="text-muted text-decoration-none fw-semibold">Services</a></li>
+              <li><a href="portfolio.html" class="text-muted text-decoration-none fw-semibold">Portfolio</a></li>
+              <li><a href="contact.html" class="text-muted text-decoration-none fw-semibold">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-3">
+            <h6 class="fw-bold mb-4 text-dark text-uppercase letter-spacing-1">Our Services</h6>
+            <ul class="list-unstyled d-flex flex-column gap-3 footer-links">
+              <li><a href="#" class="text-muted text-decoration-none fw-semibold">Enterprise Software</a></li>
+              <li><a href="#" class="text-muted text-decoration-none fw-semibold">AI & Automation</a></li>
+              <li><a href="#" class="text-muted text-decoration-none fw-semibold">Web Development</a></li>
+              <li><a href="#" class="text-muted text-decoration-none fw-semibold">SEO & Analytics</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-3">
+            <h6 class="fw-bold mb-4 text-dark text-uppercase letter-spacing-1">Follow Us</h6>
+            <div class="d-flex gap-3 social-icons">
+              <a href="#" class="text-muted d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm" style="width: 40px; height: 40px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm-8,192H48V40H208V216ZM168,88a40,40,0,0,1-80,0,8,8,0,0,1,16,0,24,24,0,0,0,48,0,8,8,0,0,1,16,0Zm-40,88a40,40,0,1,1,40-40A40,40,0,0,1,128,176Zm0-64a24,24,0,1,0,24,24A24,24,0,0,0,128,112Z"></path></svg>
+              </a>
+              <a href="#" class="text-muted d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm" style="width: 40px; height: 40px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm-8,192H48V40H208V216ZM160,112v64a8,8,0,0,1-16,0V112a16,16,0,0,0-32,0v64a8,8,0,0,1-16,0V112a32,32,0,0,1,64,0ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm-8-24a12,12,0,1,1,12-12A12,12,0,0,1,88,88Z"></path></svg>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="col mb-3"></div>
-        <div class="col mb-3">
-          <h5>Company</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="services.html" class="nav-link p-0 text-muted">Services</a></li>
-            <li class="nav-item mb-2"><a href="portfolio.html" class="nav-link p-0 text-muted">Portfolio</a></li>
-            <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact</a></li>
-          </ul>
+        <div class="row mt-5 pt-4 border-top">
+          <div class="col-12 text-center">
+            <p class="text-muted small mb-0 fw-semibold">© 2026 KARA Technologies. All rights reserved.</p>
+          </div>
         </div>
-        <div class="col mb-3">
-          <h5>Solutions</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Enterprise Software</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">AI & Automation</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mobile Apps</a></li>
-          </ul>
-        </div>
-        <div class="col mb-3">
-          <h5>Connect</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LinkedIn</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">GitHub</a></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>
     <script src="./script/bootstrap.bundle.min.js"></script>
@@ -351,6 +386,5 @@
     <script src="./script/owlcarousel.js"></script>
     <script src="./script/swiper.js"></script>
     <script src="./script/main.js"></script>
-    <script src="./script/dustAnimation.js"></script>
   </body>
 </html>
