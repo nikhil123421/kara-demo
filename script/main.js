@@ -100,3 +100,91 @@ function animateCounter(element, target, duration, label) {
           navbar.classList.remove('navbar-hidden');
         }
       });
+
+  // Hero background animation – subtle floating particles (premium, light theme)
+(function() {
+  const canvas = document.getElementById('heroCanvas');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  let width, height;
+  let particles = [];
+
+  const PARTICLE_COUNT = 60;
+  const COLORS = ['#ff7a3d', '#ffb08c', '#d4d4d4', '#f0f0f0'];
+
+  function initParticles() {
+    particles = [];
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 3 + 1,
+        color: COLORS[Math.floor(Math.random() * COLORS.length)],
+        speedX: (Math.random() - 0.5) * 0.2,
+        speedY: (Math.random() - 0.5) * 0.15,
+        opacity: Math.random() * 0.4 + 0.2
+      });
+    }
+  }
+
+  function resizeCanvas() {
+    width = window.innerWidth;
+    height = document.querySelector('.hero-section').offsetHeight;
+    canvas.width = width;
+    canvas.height = height;
+    initParticles();
+  }
+
+  function drawParticles() {
+    ctx.clearRect(0, 0, width, height);
+    for (let p of particles) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = p.color;
+      ctx.globalAlpha = p.opacity;
+      ctx.fill();
+      
+      // move
+      p.x += p.speedX;
+      p.y += p.speedY;
+
+      // wrap around edges (soft)
+      if (p.x < 0) p.x = width;
+      if (p.x > width) p.x = 0;
+      if (p.y < 0) p.y = height;
+      if (p.y > height) p.y = 0;
+    }
+    requestAnimationFrame(drawParticles);
+  }
+
+  window.addEventListener('resize', () => {
+    resizeCanvas();
+  });
+
+  resizeCanvas();
+  drawParticles();
+})();
+
+// Navbar scroll effect (add background class, keep hide behaviour)
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('navbar-scrolled');
+    navbar.classList.add('navbar-hidden');   // hide on scroll down (existing)
+  } else {
+    navbar.classList.remove('navbar-scrolled');
+    navbar.classList.remove('navbar-hidden');
+  }
+});
+
+// Stop video when modal is closed
+const videoModal = document.getElementById('videoModal');
+if (videoModal) {
+  videoModal.addEventListener('hide.bs.modal', function () {
+    const iframe = document.getElementById('videoIframe');
+    if (iframe) {
+      iframe.src = iframe.src; // force reload to stop playback
+    }
+  });
+}
