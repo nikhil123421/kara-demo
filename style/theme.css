@@ -1139,8 +1139,9 @@ body {
 
 /* ----- HERO SECTION ----- */
 #hero-section {
-  background: linear-gradient(135deg, #fdfdfd 0%, #f4f5f8 100%) !important;
-  background-image: none !important;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/?minimal,abstract,technology,dark');
+  background-size: cover;
+  background-position: center;
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -1169,15 +1170,15 @@ body {
   width: 100%;
 }
 #hero-section .hero-title h1 {
-  color: #1a1a1a !important;
+  color: #ffffff !important;
   background: none !important;
-  -webkit-text-fill-color: #1a1a1a !important;
+  -webkit-text-fill-color: #ffffff !important;
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   line-height: 1.2;
 }
 #hero-section .hero-subtitle p {
-  color: #555 !important;
+  color: #ffffff !important;
   font-size: 1.2rem;
   line-height: 1.6;
 }
