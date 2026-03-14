@@ -1139,15 +1139,18 @@ body {
 
 /* ----- HERO SECTION ----- */
 #hero-section {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/?minimal,abstract,technology,dark');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, #fdfdfd 0%, #f4f5f8 100%);
   min-height: 90vh;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
   padding: 2rem 1rem 4rem;
+}
+.hero-with-bg {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/?minimal,abstract,technology,dark') !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 #hero-section::before {
   content: "KARA";
@@ -1170,17 +1173,24 @@ body {
   width: 100%;
 }
 #hero-section .hero-title h1 {
-  color: #ffffff !important;
+  color: #1a1a1a !important;
   background: none !important;
-  -webkit-text-fill-color: #ffffff !important;
+  -webkit-text-fill-color: #1a1a1a !important;
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   line-height: 1.2;
 }
 #hero-section .hero-subtitle p {
-  color: #ffffff !important;
+  color: #555 !important;
   font-size: 1.2rem;
   line-height: 1.6;
+}
+.hero-with-bg .hero-title h1 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+.hero-with-bg .hero-subtitle p {
+  color: #ffffff !important;
 }
 #hero-section .scroll-down .chevron:before,
 #hero-section .scroll-down .chevron:after {
